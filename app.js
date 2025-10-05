@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const messageInput = document.getElementById("message-input");
     const sendButton = document.getElementById("send-button");
 
-    const socket = new WebSocket("ws://localhost:8887");
+    const socket = new WebSocket("ws://192.168.1.17:8887");
 
     socket.onopen = (event) => {
         console.log("Conexão estabelecida!");
